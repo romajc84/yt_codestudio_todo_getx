@@ -66,7 +66,7 @@ class MyHomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Get.to(MyNote(index: 0));
+          Get.to(MyNote());
         },
         child: Icon(Icons.add),
       ),
@@ -126,7 +126,7 @@ class NoteList extends StatelessWidget {
 class MyNote extends StatelessWidget {
   final int? index;
 
-  MyNote({required this.index});
+  MyNote({this.index});
 
   @override
   Widget build(BuildContext context) {
